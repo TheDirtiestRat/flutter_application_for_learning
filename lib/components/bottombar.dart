@@ -5,6 +5,7 @@ import 'package:flutter_application_for_learning/mobile_screens/home.dart';
 import 'dart:io';
 
 import 'package:flutter/services.dart';
+import 'package:flutter_application_for_learning/mobile_screens/mobile_crud.dart';
 import 'package:flutter_application_for_learning/tablet_screens/textinput_sample.dart';
 
 class BottomBarCustom extends StatelessWidget {
@@ -79,7 +80,20 @@ class BottomBarCustom extends StatelessWidget {
               },
             ),
             IconButton(
-              icon: const Icon(Icons.exit_to_app),
+              icon: const Icon(Icons.input),
+              color: Colors.white,
+              tooltip: "CRUD Sample",
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const CRUDSample(),
+                  ),
+                );
+              },
+            ),
+            IconButton(
+              icon: const Icon(Icons.door_back_door),
               color: Colors.white,
               tooltip: "Exit App",
               onPressed: () {

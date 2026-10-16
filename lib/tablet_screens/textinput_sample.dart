@@ -43,7 +43,7 @@ class _TextinputSampleState extends State<TextinputSample> {
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(16),
                         borderSide: BorderSide(color: Colors.blueAccent),
-                      )
+                      ),
                     ),
                   ),
                 ),
@@ -74,7 +74,17 @@ class _TextinputSampleState extends State<TextinputSample> {
                       color: Colors.blueGrey,
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    child: Text(output_text),
+                    child: Text(
+                      output_text,
+                      style: TextStyle(
+                        color: Colors.white, // Changes the text color
+                        fontSize: 24.0, // Size of the text
+                        letterSpacing: 1.5, // Adds space between characters
+                        wordSpacing: 2.0, // Adds space between words
+                        // decoration: TextDecoration
+                        //     .underline, // Underlines the text (or lineThrough)
+                      ),
+                    ),
                   ),
                 ),
               ],
